@@ -1,3 +1,17 @@
 <h2>My Project Title</h2>
-
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, reiciendis quo! Adipisci iusto magnam minus quia impedit ratione rerum officiis nostrum similique minima veniam facere velit fuga asperiores, est quae doloribus! Blanditiis, quasi. Quo praesentium quos rerum doloremque quas nulla! Incidunt dolore iusto quia aperiam voluptatem delectus facilis expedita doloribus tenetur veniam. Modi, aspernatur quae vero repellendus provident quidem, numquam rerum totam soluta sed qui necessitatibus eligendi. Facilis atque hic, delectus exercitationem cum corporis earum doloremque eum. Magni atque laboriosam illum natus quidem impedit ut voluptatibus omnis repudiandae eligendi quos, modi rem ipsam odio? Debitis laborum maiores nobis sequi repudiandae inventore assumenda pariatur temporibus eveniet ipsa quo alias deserunt autem repellendus vitae sed eius perspiciatis in ducimus deleniti doloremque, libero architecto? Id hic cupiditate reprehenderit accusantium inventore mollitia fugit, voluptatibus maiores error ut quae amet voluptates, alias aliquam pariatur doloribus quas, sint totam deserunt veniam sequi? Optio libero maiores quae?</p>
+<h3>Created by {{name}}</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, alias tenetur iusto ad totam consequuntur. Sunt illo itaque quis officia.</p>
+<h4>Calculator</h4>
+<div class="calculator">
+    <div class="">
+       <input type="number" [(ngModel)]="num1" placeholder="Enter 1st number" />
+    <input type="number" [(ngModel)]="num2" placeholder="Enter 2nd number" />
+    </div>
+    <div class="operation">
+        <button (click)="add()">+</button>
+        <button (click)="subtract()">-</button>
+        <button (click)="multiply()">*</button>
+        <button (click)="divide()">/</button>
+    </div>
+    <h3>Result {{result}}</h3>
+</div>
