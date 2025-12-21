@@ -1,0 +1,16 @@
+<div class="todo-container">
+    <input type="text" [(ngModel)]="newTodo" placeholder="Enter a todo" />
+
+    <button (click)="addTodo()">Add</button>
+
+    <ul *ngIf="todos.length > 0; else noTodo">
+        <li *ngFor="let todo of todos; let i = index">
+            {{ todo }}
+            <button class="delete" (click)="removeTodo(i)">X</button>
+        </li>
+    </ul>
+
+    <ng-template #noTodo>
+        <p>No todos yet!</p>
+    </ng-template>
+</div>
